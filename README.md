@@ -3,16 +3,20 @@
 
 # 说明 本仓库是学习使用 
 整合vform3 和 vue-element-plus-admin 最新版
+
 - vue-element-plus-admin 
-https://github.com/kailong321200875/vue-element-plus-admin 
+> https://github.com/kailong321200875/vue-element-plus-admin 
+
 - vform666 
-https://www.vform666.com/
+> https://www.vform666.com/
 
 # 依赖环境 
+```
 ❯ node -v
 v16.19.0
 ❯ npm -v
 8.19.3
+```
 
 # 操作步骤
 ```
@@ -21,22 +25,27 @@ cd vform-elementplusadmin
 git clone https://github.com/kailong321200875/vue-element-plus-admin.git .
 ```
 <img width="1188" alt="image" src="https://user-images.githubusercontent.com/1099115/219654526-6d40645b-b1ca-49fc-87cb-b4b4c4ac077c.png">
+
 - 拉取variant-form3-vite
+```
 git clone https://github.com/vform666/variant-form3-vite.git
 cd variant-form3-vite
+```
 - 安装依赖
-一定要注意安装node 16 
+> 一定要注意安装node 16 
 ```
 nvm use 16
 npm install --registry=https://registry.npm.taobao.org
 ```
+
 - 编译打包设计器
 ```
 npm run lib
 ```
 <img width="213" alt="image" src="https://user-images.githubusercontent.com/1099115/219677175-37414b6e-e580-46e6-a0d1-763b2a3adb7b.png">
 
-- 遇到问题 Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
+- 遇到问题Cannot find module 'autoprefixer'
+> Loading PostCSS Plugin failed: Cannot find module 'autoprefixer'
 ```
  npm install autoprefixer --save-dev
 ```
