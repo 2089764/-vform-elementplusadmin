@@ -144,7 +144,8 @@ export default {
     role: 'Role management',
     document: 'Document',
     inputPassword: 'InputPassword',
-    sticky: 'Sticky'
+    sticky: 'Sticky',
+    vformDemo: '表单设计'
   },
   permission: {
     hasPermission: 'Please set the operation permission value'

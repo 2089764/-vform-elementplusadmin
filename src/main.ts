@@ -34,22 +34,32 @@ import App from './App.vue'
 
 import './permission'
 
+//引入element-plus库
+import ElementPlus from 'element-plus'
+//引入element-plus样式
+import 'element-plus/dist/index.css'
+
+import VForm3 from '@/../lib/vform/designer.umd.js'
+import '../lib/vform/designer.style.css'
+
+import VForm3Render from '@/../lib/vform/render.umd.js'
+import '../lib/vform/render.style.css'
+
 // 创建实例
 const setupAll = async () => {
   const app = createApp(App)
-
   await setupI18n(app)
-
   setupStore(app)
-
   setupGlobCom(app)
-
   setupElementPlus(app)
-
   setupRouter(app)
-
   setupPermission(app)
-
+  //全局注册element-plus
+  app.use(ElementPlus)
+  //全局注册VForm3，同时注册了v-form-designer、v-form-render等组件
+  app.use(VForm3)
+  //注册v-form-render等组件
+  app.use(VForm3Render)
   app.mount('#app')
 }
 

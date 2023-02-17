@@ -110,6 +110,9 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           drop_console: env.VITE_DROP_CONSOLE === 'true'
         }
       }
+      ,commonjsOptions: {
+        include: /node_modules|lib/
+      }
     },
     server: {
       port: 4000,
@@ -142,7 +145,9 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         'intro.js',
         'qrcode',
         '@wangeditor/editor',
-        '@wangeditor/editor-for-vue'
+        '@wangeditor/editor-for-vue',
+        '@/../lib/vform/designer.umd.js' //此处路径必须跟main.js中import路径完全一致！
+        ,'@/../lib/vform/render.umd.js'
       ]
     }
   }

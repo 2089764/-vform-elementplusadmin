@@ -144,7 +144,8 @@ export default {
     role: '角色管理',
     document: '文档',
     inputPassword: '密码输入框',
-    sticky: '黏性'
+    sticky: '黏性',
+    vformDemo: '表单设计'
   },
   permission: {
     hasPermission: '请设置操作权限值'

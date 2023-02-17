@@ -85,6 +85,15 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
           title: t('router.workplace'),
           noCache: true
         }
+      },
+      {
+        path: 'vformDemo',
+        component: () => import('@/views/Vformdemo/index.vue'),
+        name: 'vformDemo',
+        meta: {
+          title: t('router.vformDemo'),
+          noCache: true
+        }
       }
     ]
   },
