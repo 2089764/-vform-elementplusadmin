@@ -5,7 +5,7 @@
 <img width="2541" alt="image" src="https://user-images.githubusercontent.com/1099115/219689275-68813305-cc29-46a6-ad55-26853926ed86.png">
 
 # 说明 本仓库是学习使用 
-整合vform3 和 vue-element-plus-admin 最新版
+整合Variant Form vue3 和 vue-element-plus-admin 最新版
 
 - vue-element-plus-admin 
 > https://github.com/kailong321200875/vue-element-plus-admin 
